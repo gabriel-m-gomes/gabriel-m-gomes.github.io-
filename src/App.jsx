@@ -1,10 +1,9 @@
-import { useState } from "react";
-import Hero from "./components/Hero";
+import Hero from "./sections/Hero";
+import Navbar from "./sections/NavBar";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <Navbar />
       <Hero />
     </>
   );
