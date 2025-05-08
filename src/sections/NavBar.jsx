@@ -5,32 +5,32 @@ const NavBar = () => {
   const [active, setActive] = useState("about");
 
   return (
-    <div className=" text-[#c2e8f0] flex justify-end pr-8 py-10 gap-6">
+    <nav className="text-[#c2e8f0] flex flex-col sm:flex-row justify-center sm:justify-end items-center gap-4 sm:gap-6 py-6 px-4 sm:px-10">
       {linksNavBar.map((link) => (
-        <nav
+        <div
           key={link.id}
-          className={`flex items-center cursor-pointer group`}
+          className="flex items-center cursor-pointer group"
           onClick={() => setActive(link.id)}
         >
-          <a
-            className={`w-8 h-px mr-4  ${
+          <div
+            className={`w-6 sm:w-8 h-px mr-2 sm:mr-4 ${
               active === link.id
                 ? "bg-white"
                 : "bg-gray-600 group-hover:bg-gray-400"
             }`}
-          ></a>
-          <a
-            className={`text-sm font-medium tracking-widest transition-colors duration-400 ${
+          ></div>
+          <span
+            className={`text-sm font-medium tracking-widest transition-colors duration-300 ${
               active === link.id
                 ? "text-white"
                 : "text-gray-400 group-hover:text-gray-200"
             }`}
           >
             {link.label}
-          </a>
-        </nav>
+          </span>
+        </div>
       ))}
-    </div>
+    </nav>
   );
 };
 
