@@ -4,7 +4,7 @@ import InstagramIcon from "../utils/InstagramIcon";
 
 const Contact = () => {
   return (
-    <ul className=" text-[#c2e8f0] flex gap-2 px-50 py-10">
+    <ul className=" text-[#c2e8f0] flex gap-2 px-0.5 py-10">
       <li>
         <a
           href="https://github.com/gabriel-m-gomes"
