@@ -1,4 +1,5 @@
-import Contact from "./Contact";
+import Contact from "../components/Contact";
+import Skills from "../components/Skills.jsx";
 
 const Hero = () => {
   return (
@@ -16,6 +17,7 @@ const Hero = () => {
         support great web applications.
       </h3>
       <Contact />
+      <Skills />
     </div>
   );
 };
